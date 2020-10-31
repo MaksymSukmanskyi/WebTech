@@ -1,0 +1,382 @@
+/*Body блок*/
+@import url('https://fonts.googleapis.com/css2? family = Roboto: wght @ 100 & display = swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html {
+    width: 100%;
+    height: 2000px;
+}
+
+body {
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Header блок*/
+
+header {
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background:transparent;
+    float: left;
+    position: fixed;
+}
+
+
+header #logo {
+    color: white;
+    cursor: pointer;
+}
+
+header #logo span {
+    font-size: 1.5em;
+    line-height: 45px;
+    margin-left: 45px;
+    font-family: 'Suez One', serif;
+}
+
+@media (min-width: 720px){
+    #logo{
+        float: left;
+        width: 30%;
+        font-size: 1.1em;
+
+    }
+    #about {
+        float: right;
+        width: 67%;
+    }
+}
+
+@media (max-width: 700px){
+    #logo{
+        margin-top: 15px;
+        width: 100%;
+        font-size: 1.5em;
+        
+    }
+    #about {
+        float: left;
+        width: 100%;
+    }
+}
+
+#about {
+    text-align: center;
+    font-size: 1em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#about>a {color: white;}
+#about>a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+#about>a:not(:last-child){
+    margin-right: 7%;
+
+}
+
+.fixed {
+    z-index: 5000;
+    background-color: white;
+    border-bottom: 1px solid grey;
+}
+
+header.fixed #logo {
+    color: violet;
+}
+.fixed #about a { color: violet}
+.fixed #about a:hover { color: grey}
+
+/*Главный блок на сайте*/
+#top{
+    width: 100%;
+    background-image: url(https://way2day.com/wp-content/uploads/2018/06/Luchshie-multfilmy-2010-2015.jpg);
+    background-blend-mode: multiply;
+    background-color:rgb(54, 51, 51);
+    background-size: cover;
+    text-align: center;
+    color:white;
+    font-size: 2.5em;
+}
+
+@media (min-width: 1001px) {
+    #top{
+        font-size: 2.5em;
+        height: 900px;
+    }
+}
+@media (max-width: 1000px) and (min-width: 651px) {
+    #top{
+        font-size: 1.5em;
+        height: 500px;
+
+    }
+}
+@media (max-width: 650px) {
+    #top{
+        font-size: 0.9em;
+        padding-top: 50%;
+        height: 350px;
+
+    }
+}
+#top h1 {
+    padding-top: 20%;
+}
+#top h3 {
+    color: silver;
+}
+#top h6 {
+    color:red;
+}
+/*блок навигации*/
+#navigbar{
+    
+    float: left;
+    background-color: violet;
+    border-top: 2px solid silver;
+    color: grey;
+    font-size: 1.3em;
+}
+
+@media (min-width: 1401px) {
+    #navigbar{
+        padding: 100px 20%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 1400px) {
+    #navigbar{
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    #navigbar div{
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+#navigbar .leftblok{
+    border-top:0px; 
+    padding-top:0px;
+    float: left;
+    color:black;
+    font-size: 0.9em;
+}
+
+#navigbat .leftblok> span{
+    float: right;
+}
+#navigbar .leftblok_2{
+    border-top:0px; 
+    padding-top:0px;
+    float: right;
+    color:black;
+    font-size: 0.9em;
+}
+
+#navigbat .leftblok_2> span{
+    float: right;
+}
+
+#navigbar div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#navigbar h2 {font-size: 2em;}
+#navigbar span {color: grey;}
+
+/*блок рекомендаций*/
+
+#recommend {
+    float: left;
+    background-image: url(https://avatarko.ru/img/kartinka/33/multfilm_lyagushka_32117.jpg);
+    background-blend-mode: multiply;
+    background-color: violet;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+#recommend h2 {
+    font-size: 3em;}
+#recommend h4 {color: white; font-size: 1.5em;}
+
+#recommend .mult{
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 50px;
+}
+
+#recommend .mult:nth-child(odd){
+    margin-left: 18%;
+}
+
+#recommend img {
+    background: white;
+    padding: 5px;
+    border: 2px solid silver;
+    float: left;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 400px;
+}
+
+#recommend span {
+    float: left;
+    width: 100%;
+    font-size: 1em;
+    margin-top: 10px;
+    color: black;
+}
+
+#recommend a {
+    float: left;
+    width: 100%;
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: violet;
+}
+
+@media (max-width: 700px){
+    #recommend .mult {
+        width: 80%!important;
+        margin-right: 0!important;
+        margin-left: 10%!important;
+    }
+}
+/*блок поиска*/
+#search {
+    width: 100%;
+    float: left;
+    padding-bottom: 40px;
+    padding-top: 70px;
+    border-top: 4px solid white;
+    background: violet;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab' serif;
+    font-weight: lighter;
+}
+
+#search h5 { font-size: 3em; color: grey;}
+
+#form_input{
+    margin-top: 15px;
+    width: 35%;
+    margin-left: 38%;
+    font-size: 1.1em;
+}
+
+#form_input label{
+    color: grey;
+    cursor: pointer;
+    font-size: 1.4em;
+    font-family: 'Roboto Slab' serif;
+}
+
+#form_input label > span {
+    color: grey;
+}
+
+#form_input input, #form_input textarea {
+    margin-bottom: 10px;
+    width: 70%;
+    padding: 10px 2%;
+    border-radius: 7px;
+    border: 2px solid silver;
+    font-size: 0.9em;
+    color: grey;
+}
+
+#form_input input:focus, #form_input textarea:focus{
+    border-color: #333333;
+}
+
+.btn{
+    float: left;
+    border-radius: 5px;
+    padding: 5px 9px;
+    font-size: 1.2em;
+    background-color: red;
+    text-shadow: grey 0 0 2px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Roboto Slab' serif;
+}
+
+.btn:hover{
+    background-color:red;
+    
+}
+/*Вопросы и ответы*/
+#faq{
+    background-color:white;
+    border-top: 2px dashed silver;
+    width: 100%;
+    float: left;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+@media(min-width: 801){
+    #faq div{
+        width: 25%;
+        margin-left: 6%;
+        float: left;
+    }
+}
+@media(max-width: 800){
+    #faq div{
+        width: 80%;
+        margin-left: 10%;
+        float: left;
+    }
+}
+
+#faq div{
+    width: 25%;
+    margin-left: 6%;
+    float: left;
+}
+
+#faq .title{
+    font-weight: lighter;
+    color: silver;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+}
+
+#faq .heading{
+    color: silver;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#faq p{
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: silver;
+    font-size: 0.95em;
+    margin-bottom: 40px;
+}
