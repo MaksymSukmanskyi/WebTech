@@ -13,10 +13,10 @@ body, html {
 }
 
 body {
-    background-color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1em;
-    color:red;
+    background-color: black;/*колір фону*/
+    font-family: 'Times New Roman', Times, serif;/*сімейство шрифту*/
+    font-size: 1em;/*розмір шрифту*/
+    color:red;/*колір шрифту*/
 }
 
 /*Header блок*/
