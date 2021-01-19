@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antoshka: Сайт-візитка одного із найпопулярніших магазинів іграшок та дитячих товарів в Україні</title>
+    <meta name="description" content="Детские игрушки в интернет-магазине Антошка. Хотите купить игрушку для ребенка? Заходите в интернет-магазин Антошка, у нас лучшие цены на игрушки для детей!">
+    <meta name="keywords" content="игрушки, игрушки для детей, детские игрушки, купить игрушку для ребенка, интернет-магазин антошка, antoshka.ua">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="google-site-verification" content="rbeVeF9CMn9azeIkpwPVyXuGB7FBvtn149ry7JQfO5A">
+    <link rel="stylesheet" href="C:\Users\User\Desktop\Kurs\css\Antoshka.css">
+</head>
+<body>
+    <!--Заголовок-->
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span><b><i><img src="file:///C:/Users/User/Desktop/Kurs/img/logo.svg" style="width: 20%;"/></i></b></span>
+        </div>
+        
+        <div id="about">
+            <a href="C:\Users\User\Desktop\Kurs\html\Antoshka.html" title="Пошук"><u><b>Головна</b></u></a>
+            <a href="C:\Users\User\Desktop\Kurs\html\Hist.html" title="Опис товарів" onclick="slowScroll('#PostOpys')"><u><b>Про нас</b></u></a>
+            <a href="C:\Users\User\Desktop\Kurs\html\Categ.html" title="Рекомендуемые" onclick="slowScroll('#recommend')"><u><b>Опис товарів</b></u></a>
+            <a href="C:\Users\User\Desktop\Kurs\html\Example.html" title="Поисковик" onclick="slowScroll('#search')"><u><b>Акції</b></u></a>
+            <a href="C:\Users\User\Desktop\Kurs\html\About.html" title="Уведомления" onclick="slowScroll('#faq')"><u><b>Повідомлення</b></u></a>
+        </div>
+    </header>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function() {
+            if($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+    </script>
+    <!--Фон-->
+    <div id="top">
+        <h1>"Антошка"</h1>
+        <h3 style="font-family: 'Times New Roman', Times, serif">магазин игрушек и детских товаров</h3>
+        <h6><sup>*</sup>Игрушки для мальчиков и девочек всех возрастов</p></h6>
+        <h3><a href="https://antoshka.ua/">Посилання на сайт компанії</a></h3>
+        <h6><a href="C:\Users\User\Desktop\Kurs\404.html">ep</a></h6>
+    </div>
+    
+    
+    <!--Поисковик-->
+    <div id="search">
+        <h5>Поисковик</h5>
+            <form id="form_input" data-search-url="https://antoshka.ua/catalogsearch/ajax/suggest/" class="search" action="https://antoshka.ua/catalogsearch/result/" method="get">
+                <input id="search-input" class="search-input" type="search" placeholder="Поиск" name="q" value="">
+                <span class="btn-search">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 612.08 612.08" style="enable-background:new 0 0 612.08 612.08;" xml:space="preserve">
+                    </svg>
+                </span>
+                    
+            </form>
+    </div>
+    
+    
+    <footer>
+        <div>
+            <span class="title">Компания</span><br>
+            <p><a href="https://antoshka.ua/o-nas">О нас</a></p>
+            <p><a href="https://antoshka.ua/shops">Адреса магазинов</a></p>
+            <p><a href="https://antoshka.ua/partnership">Сотрудничество</a></p>
+            <p><a href="https://antoshka.ua/contacts2">Контакты</a></p>
+            <span class="lazy-link" data-href="http://redhead.ua/ru/vacancies"><span>Вакансии</span></span>
+        </div>
+        <div>
+            <span class="title">Покупка:</span><br>
+            <p><a href="https://antoshka.ua/delivery">Доставка и оплата</a></p>
+            <p><a href="https://antoshka.ua/garantiyy">Гарантия и возврат</a></p>
+            <p><a href="https://antoshka.ua/discount">Дисконтный клуб</a></p>
+        </div>
+        <div>
+            <span class="title">Информация:</span><br>
+            <p><a href="https://antoshka.ua/questions">Вопросы и ответы</a></p>
+            <p><a href="https://antoshka.ua/blog">Статьи и обзоры</a></p>
+            <p><a href="https://antoshka.ua/news">Новости</a></p>
+            <p><a href="https://antoshka.ua/actions/online">Акции</a></p>
+        </div>
+        <div>
+            <span class="title">Дополнительно:</span><br>
+            <p><a href="https://antoshka.ua/giftselect">Подбор подарка</a></p>
+            <p><a href="https://antoshka.ua/barbershop">Парикмахерская</a></p>
+            <p><a href="https://antoshka.ua/fashion">театр детской моды</a></p>
+            <p><a href="https://antoshka.ua/school">Школа мам</a></p> 
+        </div>
+        <div>
+            <span class="title">Популярные категории:</span><br>
+            <p><a href="https://antoshka.ua/igrushki/nastolnye-igry.html">Настольные игры</a></p>
+            <p><a href="https://antoshka.ua/igrushki.html">Игрушки</a></p>
+            <p><a href="https://antoshka.ua/avtokresla.html">Автокресла</a></p>
+            <p><a href="https://antoshka.ua/tovary-dlya-mam.html">Товары для мам</a></p>
+            <p><a href="https://antoshka.ua/detskaya-mebel.html">Детская мебель</a></p>
+            <p><a href="https://antoshka.ua/malyshi-do-goda/kupanie-i-tualet/podguzniki-portal.html">Памперсы</a></p>
+            <p><a href="https://antoshka.ua/detskaya-mebel/krovatki-detskie.html">Детские кроватки</a></p>
+            <p><a href="https://antoshka.ua/igrushki/kukly-i-aksessuary.html">Куклы</a></p>
+            <p><a href="https://antoshka.ua/kolyaski.html">Коляски</a></p> 
+        </div>
+        <div>
+            <span class="title">Сейчас ищут:</span><br>
+            <p><a href="https://antoshka.ua/obuv/f/torgovaja_marka/pablosky.html">Детская обувь Pablosky</a></p>
+            <p><a href="https://antoshka.ua/odezhda/dlya-novorozhdennyh.html">Одежда для новорожденных</a></p>
+            <p><a href="https://antoshka.ua/molodym-mamam/podderzhka-grudnogo-vskarmlivanija-portal/molokootsosy-portal.html">Молокоотсосы</a></p>
+            <p><a href="https://antoshka.ua/odezhda/f/torgovaja_marka/lenne.html">Детская одежда Ленне</a></p>
+            <p><a href="https://antoshka.ua/uhod-za-rebenkom/podguzniki-pelenki-salfetki/podguzniki.html">Подгузники</a></p>
+            <p><a href="https://antoshka.ua/detskaya-mebel/stulchiki-dlya-kormleniya.html">Стульчик для кормления</a></p>
+            <p><a href="https://antoshka.ua/plastilin-play-doh-33-ottenka.html">Пластилин Плей До</a></p>
+            <p><a href="https://antoshka.ua/igrushki/myagkie-igrushki/interaktivnye.html">Интерактивные игрушки</a></p>
+            <p><a href="https://antoshka.ua/igrushki/konstruktor.html">Конструкторы</a></p>
+            <p><a href="https://antoshka.ua/odezhda/shkolnaya-forma-dev.html">Школьная форма</a></p>
+            <p><a href="https://antoshka.ua/igrushki/f/torgovaja_marka/monopoly.html">Монополия</a></p>  
+        </div>
+        <div>
+            <span class="title">Связы:</span><br>
+            <p><a href="mail@antoshka.ua">mail@antoshka.ua</a></p>
+            <p><a href="tel:0800306063">0800306063</a></p>
+            <p><a href="https://antoshka.ua/igrushki/portal.html">Задать вопрос</a></p> 
+        </div> 
+    </footer>
+</body>
+</html>
