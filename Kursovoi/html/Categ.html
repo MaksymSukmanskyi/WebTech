@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antoshka: Сайт-візитка одного із найпопулярніших магазинів іграшок та дитячих товарів в Україні</title>
+    <meta name="description" content="Детские игрушки в интернет-магазине Антошка. Хотите купить игрушку для ребенка? Заходите в интернет-магазин Антошка, у нас лучшие цены на игрушки для детей!">
+    <meta name="keywords" content="игрушки, игрушки для детей, детские игрушки, купить игрушку для ребенка, интернет-магазин антошка, antoshka.ua">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="google-site-verification" content="rbeVeF9CMn9azeIkpwPVyXuGB7FBvtn149ry7JQfO5A">
+    <link rel="stylesheet" href="C:\Users\User\Desktop\Kurs\css\Antoshka.css">
+</head>
+<body>
+    <!--Заголовок-->
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span><b><i><img src="file:///C:/Users/User/Desktop/Kurs/img/logo.svg" style="width: 20%;"/></i></b></span>
+        </div>
+        
+        <div id="about">
+            <a href="C:\Users\User\Desktop\Kurs\html\Antoshka.html" title="Пошук"><u><b>Головна</b></u></a>
+            <a href="C:\Users\User\Desktop\Kurs\html\Hist.html" title="Опис товарів" onclick="slowScroll('#PostOpys')"><u><b>Про нас</b></u></a>
+            <a href="C:\Users\User\Desktop\Kurs\html\Categ.html" title="Рекомендуемые" onclick="slowScroll('#recommend')"><u><b>Опис товарів</b></u></a>
+            <a href="C:\Users\User\Desktop\Kurs\html\Example.html" title="Поисковик" onclick="slowScroll('#search')"><u><b>Акції</b></u></a>
+            <a href="C:\Users\User\Desktop\Kurs\html\About.html" title="Уведомления" onclick="slowScroll('#faq')"><u><b>Повідомлення</b></u></a>
+        </div>
+    </header>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function() {
+            if($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+    </script>
+
+    <!--Категории-->
+    <div id="category">
+        <div id="table">
+                <div>
+                    <h2>Игрушки для:</h2>
+                </div>
+            <div>
+                <div>
+                    <img src="https://antoshka.ua/skin/frontend/antoshka/v2/images/portal/gender-faces/boy-face.svg">
+                    <a href="https://antoshka.ua/igrushki/f/pol/malchik.html">мальчика</a>
+                </div>
+                <div>
+                    <img src="https://antoshka.ua/skin/frontend/antoshka/v2/images/portal/gender-faces/girl-face.svg">
+                    <a href="https://antoshka.ua/igrushki/f/pol/devochka.html">девочки</a>
+                </div>
+                <div>
+                    <img src="https://antoshka.ua/skin/frontend/antoshka/v2/images/portal/gender-faces/child-face.svg">
+                    <a href="https://antoshka.ua/igrushki/f/vozrast_po/1-god/vozrast_s/0-mes.html">малыша</a>
+                </div>
+                <div>
+                    <img src="https://antoshka.ua/skin/frontend/antoshka/v2/images/portal/gender-faces/old-man-face.svg">
+                    <a href="https://antoshka.ua/igrushki/f/vozrast_po/16-let/vozrast_s/12-let.html">подростка</a>
+                </div>
+        </div>
+        </div>
+        <div class="leftblock">
+            <h2>Игрушки по возрасту</h2><br><br>
+                        <a href="https://antoshka.ua/igrushki/f/vozrast_po/3-goda/vozrast_s/1-god.html">1-3 года</a><br>
+                        <a href="https://antoshka.ua/igrushki/f/vozrast_po/5-let/vozrast_s/3-goda.html">3-5 лет</a><br>
+                        <a href="https://antoshka.ua/igrushki/f/vozrast_po/9-let/vozrast_s/6-let.html">6-9 лет</a><br>
+                        <a href="https://antoshka.ua/igrushki/f/vozrast_po/12-let/vozrast_s/9-let.html">9-12 лет</a><br>
+                        <a href="https://antoshka.ua/igrushki/f/vozrast_po/16-let/vozrast_s/12-let.html">12+</a><br>
+        </div>
+        <div class="leftblock_2">
+                <h2>Игрушки по цене</h2><br><br>
+                <a href="https://antoshka.ua/igrushki/f/cena/0-300.html">0-300 грн.</a><br>
+                <a href="https://antoshka.ua/igrushki/f/cena/300-500.html">300-500 грн.</a><br>
+                <a href="https://antoshka.ua/igrushki/f/cena/500-1000.html">500-1000 грн.</a><br>
+                <a href="https://antoshka.ua/igrushki/f/cena/1000-1500.html">1000-1500 грн.</a><br>
+                <a href="https://antoshka.ua/igrushki/f/cena/1500-43377.html">1500+</a><br>
+                <div class="poloska"></div>
+        </div> 
+        <div class="tegs">
+            <table>
+                <tr><th>Темы и персонажи</th></tr>
+                <tr>
+                    <td><img src="https://antoshka.ua/media/portal/small-slider/lego.png"></td>
+                    <td><img src="https://antoshka.ua/media/portal/small-slider/barbie.png"></td>
+                    <td><img src="https://antoshka.ua/media/portal/small-slider/toy-story.png"></td>
+                    <td><img src="https://antoshka.ua/media/portal/small-slider/starwars.png"></td>
+                </tr>
+                <tr>
+                    <td><a href="https://antoshka.ua/igrushki/lego.html">LEGO</a></td>
+                    <td><a href="https://antoshka.ua/temy-i-personazhi/barbie.html">BARBIE</a></td>
+                    <td><a href="https://antoshka.ua/temy-i-personazhi/disney.html">DISNEY</a></td>
+                    <td><a href="https://antoshka.ua/temy-i-personazhi/star-wars.html">STAR WARS</a></td>
+                </tr>
+            </table>
+        </div>   
+    </div>
+    
+    <footer>
+        <div>
+            <span class="title">Компания</span><br>
+            <p><a href="https://antoshka.ua/o-nas">О нас</a></p>
+            <p><a href="https://antoshka.ua/shops">Адреса магазинов</a></p>
+            <p><a href="https://antoshka.ua/partnership">Сотрудничество</a></p>
+            <p><a href="https://antoshka.ua/contacts2">Контакты</a></p>
+            <span class="lazy-link" data-href="http://redhead.ua/ru/vacancies"><span>Вакансии</span></span>
+        </div>
+        <div>
+            <span class="title">Покупка:</span><br>
+            <p><a href="https://antoshka.ua/delivery">Доставка и оплата</a></p>
+            <p><a href="https://antoshka.ua/garantiyy">Гарантия и возврат</a></p>
+            <p><a href="https://antoshka.ua/discount">Дисконтный клуб</a></p>
+        </div>
+        <div>
+            <span class="title">Информация:</span><br>
+            <p><a href="https://antoshka.ua/questions">Вопросы и ответы</a></p>
+            <p><a href="https://antoshka.ua/blog">Статьи и обзоры</a></p>
+            <p><a href="https://antoshka.ua/news">Новости</a></p>
+            <p><a href="https://antoshka.ua/actions/online">Акции</a></p>
+        </div>
+        <div>
+            <span class="title">Дополнительно:</span><br>
+            <p><a href="https://antoshka.ua/giftselect">Подбор подарка</a></p>
+            <p><a href="https://antoshka.ua/barbershop">Парикмахерская</a></p>
+            <p><a href="https://antoshka.ua/fashion">театр детской моды</a></p>
+            <p><a href="https://antoshka.ua/school">Школа мам</a></p> 
+        </div>
+        <div>
+            <span class="title">Популярные категории:</span><br>
+            <p><a href="https://antoshka.ua/igrushki/nastolnye-igry.html">Настольные игры</a></p>
+            <p><a href="https://antoshka.ua/igrushki.html">Игрушки</a></p>
+            <p><a href="https://antoshka.ua/avtokresla.html">Автокресла</a></p>
+            <p><a href="https://antoshka.ua/tovary-dlya-mam.html">Товары для мам</a></p>
+            <p><a href="https://antoshka.ua/detskaya-mebel.html">Детская мебель</a></p>
+            <p><a href="https://antoshka.ua/malyshi-do-goda/kupanie-i-tualet/podguzniki-portal.html">Памперсы</a></p>
+            <p><a href="https://antoshka.ua/detskaya-mebel/krovatki-detskie.html">Детские кроватки</a></p>
+            <p><a href="https://antoshka.ua/igrushki/kukly-i-aksessuary.html">Куклы</a></p>
+            <p><a href="https://antoshka.ua/kolyaski.html">Коляски</a></p> 
+        </div>
+        <div>
+            <span class="title">Сейчас ищут:</span><br>
+            <p><a href="https://antoshka.ua/obuv/f/torgovaja_marka/pablosky.html">Детская обувь Pablosky</a></p>
+            <p><a href="https://antoshka.ua/odezhda/dlya-novorozhdennyh.html">Одежда для новорожденных</a></p>
+            <p><a href="https://antoshka.ua/molodym-mamam/podderzhka-grudnogo-vskarmlivanija-portal/molokootsosy-portal.html">Молокоотсосы</a></p>
+            <p><a href="https://antoshka.ua/odezhda/f/torgovaja_marka/lenne.html">Детская одежда Ленне</a></p>
+            <p><a href="https://antoshka.ua/uhod-za-rebenkom/podguzniki-pelenki-salfetki/podguzniki.html">Подгузники</a></p>
+            <p><a href="https://antoshka.ua/detskaya-mebel/stulchiki-dlya-kormleniya.html">Стульчик для кормления</a></p>
+            <p><a href="https://antoshka.ua/plastilin-play-doh-33-ottenka.html">Пластилин Плей До</a></p>
+            <p><a href="https://antoshka.ua/igrushki/myagkie-igrushki/interaktivnye.html">Интерактивные игрушки</a></p>
+            <p><a href="https://antoshka.ua/igrushki/konstruktor.html">Конструкторы</a></p>
+            <p><a href="https://antoshka.ua/odezhda/shkolnaya-forma-dev.html">Школьная форма</a></p>
+            <p><a href="https://antoshka.ua/igrushki/f/torgovaja_marka/monopoly.html">Монополия</a></p>  
+        </div>
+        <div>
+            <span class="title">Связы:</span><br>
+            <p><a href="mail@antoshka.ua">mail@antoshka.ua</a></p>
+            <p><a href="tel:0800306063">0800306063</a></p>
+            <p><a href="https://antoshka.ua/igrushki/portal.html">Задать вопрос</a></p> 
+        </div> 
+    </footer>
+</body>
+</html>
